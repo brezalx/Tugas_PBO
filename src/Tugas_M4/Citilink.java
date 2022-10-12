@@ -21,9 +21,6 @@ public class Citilink extends Tiket{
         this.jumlahPenumpang=jumlahPenumpang;
     }
 
-    Citilink(int jumlah, String kotaTujuan, String noPesawat, String noKursi, String bookingID, String nik, String nama, String jenis_kelamin, String tglBerangkat, String tglKembali, String kotaAsal) {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
-    }
 
     public String getKotaTujuan() {
         return kotaTujuan;
@@ -65,22 +62,5 @@ public class Citilink extends Tiket{
     public int getTotal(){
         total = getHarga() * getJumlahPenumpang();
         return total;
-    }
-    
-    public void getCetak (){
-        System.out.println("===================================");
-        System.out.println("====  Preview Tiket Citilink  =====");
-        System.out.println("===================================");
-        System.out.println("Booking ID : " + super.getBookingID());
-        System.out.println("NIK : " + super.getNik());
-        System.out.println("Nama : " + super.getNama());
-        System.out.println("Kota Asal : " + super.getKotaAsal());
-        System.out.println("Kota Tujuan : " + getKotaTujuan());
-        System.out.println("Tanggal Berangkat : " + super.getTglBerangkat());
-        System.out.println("Tanggal Kembali : " + super.getTglKembali());
-        System.out.println("Nomor Pesawat : " + getNoPesawat());
-        System.out.println("Nomor Kursi : " + getNoKursi());
-        System.out.println("Harga Tiket : " + getHarga());
-        System.out.println(" ");
     }
 }
