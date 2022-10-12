@@ -20,7 +20,7 @@ public class MainClass {
         
         String tglKembali = "";
         int maskapai = 0, index = 0;
-        String pesanlagi;
+        String PL;
 
         try {
             do {
@@ -259,8 +259,8 @@ public class MainClass {
                 }
 
                 System.out.print("\n\nPesan Lagi (Y/N): ");
-                pesanlagi = br.readLine();
-            } while (pesanlagi.equalsIgnoreCase("y"));
+                PL = br.readLine();
+            } while (PL.equalsIgnoreCase("y"));
         } catch (Exception e) {
             // TODO: handle exception
         }
